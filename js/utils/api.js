@@ -8,7 +8,7 @@
 window.api = {};
 
 // Configuration
-const API_BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL = 'http://localhost:3000/api';
 let socket = null;
 
 /**
@@ -17,7 +17,7 @@ let socket = null;
 window.api.initialize = function() {
     // Initialize Socket.io connection
     if (typeof io !== 'undefined') {
-        socket = io('http://localhost:3001');
+        socket = io('http://localhost:3000');
         
         socket.on('connect', () => {
             console.log('Connected to server');

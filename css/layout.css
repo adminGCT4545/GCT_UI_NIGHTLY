@@ -1,0 +1,172 @@
+/* Layout Styles */
+
+/* --- Right Panel --- */
+.right-panel {
+    width: 0;
+    background-color: var(--bg-secondary);
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    flex-shrink: 0;
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.right-panel.visible {
+    width: var(--right-panel-width);
+}
+
+/* Artifact styles */
+.artifact {
+    background-color: var(--bg-tertiary);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.artifact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.artifact-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.artifact-type {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background-color: var(--bg-primary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+.artifact-content {
+    padding: 1rem;
+    font-size: 0.9rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.artifact-content pre {
+    background-color: var(--bg-primary);
+    padding: 0.75rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.artifact-content code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.85rem;
+}
+
+.artifact-content p {
+    margin-bottom: 0.75rem;
+}
+
+.artifact-content h1, .artifact-content h2, .artifact-content h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.artifact-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.artifact-content th, .artifact-content td {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.artifact-content th {
+    background-color: var(--bg-primary);
+}
+
+/* Notepad styles */
+.notepad-container {
+    background-color: var(--bg-tertiary);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.notepad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.notepad-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.close-notepad {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.close-notepad:hover {
+    color: var(--text-primary);
+}
+
+.notepad-content {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fffef0;
+    color: #333;
+    font-size: 0.9rem;
+    overflow-y: auto;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notepad-content:focus {
+    outline: none;
+}
+
+.notepad-content[data-placeholder]:empty:before {
+    content: attr(data-placeholder);
+    color: #999;
+    font-style: italic;
+}
+
+.notepad-content .ai-suggestion {
+    background-color: rgba(11, 132, 255, 0.1);
+    padding: 0.5rem;
+    border-left: 3px solid var(--accent-primary);
+    margin: 0.5rem 0;
+}
+
+/* Right panel sections */
+.dashboard-section {
+    background-color: var(--bg-tertiary);
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.dashboard-section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}

@@ -1,0 +1,35 @@
+/* CSS Variables */
+:root {
+    /* Colors */
+    --bg-primary: #121212;
+    --bg-secondary: #202124;
+    --bg-tertiary: #292a2d;
+    --text-primary: #ffffff;
+    --text-secondary: #e8e8e8;
+    --text-muted: #9aa0a6;
+    --accent-primary: #0b84ff;
+    --accent-hover: #005ec4;
+    --border-color: #3d3d3e;
+    --danger-color: #dc3545;
+    --danger-hover: #a71d2a;
+    --warning-color: #ffc107;
+    
+    /* Layout */
+    --sidebar-width: 260px;
+    --sidebar-collapsed-width: 60px;
+    --right-panel-width: 350px;
+    
+    /* Transitions */
+    --transition-speed: 0.3s;
+}
+
+/* Light Theme */
+body.light-theme {
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e9ecef;
+    --text-primary: #212529;
+    --text-secondary: #495057;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+}
